@@ -11,3 +11,5 @@ iptables -A FORWARD -p tcp -d <vm-addr> --dport 22 -j ACCEPT
 sh -c 'iptables-save > /etc/iptables/rules.v4' 
 ```
 `<vm-addr>` is VM address. You can get it by running `ip addr` inside VM.
+
+UPD: Better solution https://serverfault.com/questions/915257/ssh-port-forwarding-with-firewall-cmd
